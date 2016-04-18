@@ -42,13 +42,17 @@ The easiest way is to download the script **treeprune.py** directly:
 
 An edge list file is needed as an input. The file should be formatted as:
 
-|a|b|0.17|
-|...|...|...|
-|b|c|0.54|
-|.|.|.|
+```
+a,b,0.17
+b,c,0.54
+...,...,...
+```
 
-From left to right, the first column is the source node, the second is the target node, and 
-the third is the edge weight. 
+The implicit header, from left to right, is **source**, **target**, and **edge weight**.
+
+In this example, comma is used as the delimiter. You may also choose other 
+delimiters, but please always specify your delimiter when using the function
+`get_tree` below.
 
 ## Functions
 
@@ -74,7 +78,7 @@ Two functions are available:
 # Testing
 [[back to top](#treeprune)]
 
-An example edge list file can be downloaded from the following link, [https://github.com/zhenzhu/treeprune/blob/master/examples/exampleEdgeList.csv](https://github.com/zhenzhu/treeprune/blob/master/examples/exampleEdgeList.csv).
+An example edge list file can be downloaded from the following link, [https://raw.githubusercontent.com/zhenzhu/treeprune/master/examples/exampleEdgeList.csv](https://raw.githubusercontent.com/zhenzhu/treeprune/master/examples/exampleEdgeList.csv).
 
 ```python
 import treeprune as tp
