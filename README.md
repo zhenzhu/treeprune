@@ -50,8 +50,8 @@ b,c,0.54
 
 The implicit header, from left to right, is **source**, **target**, and **edge weight**.
 
-In this example, comma is used as the delimiter. You may also choose other 
-delimiters, but please always specify your delimiter when using the function
+In this example, comma is used as the delimiter. You may choose a different
+delimiter, so please always specify your delimiter when using the function
 `get_tree` below.
 
 ## Functions
