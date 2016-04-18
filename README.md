@@ -1,5 +1,4 @@
-treeprune 
-=========
+# treeprune 
 
 **treeprune.py** is a Python module that provides a network-pruning functionality
 and returns a tree with the customized root node, edge weight threshold, 
@@ -30,10 +29,11 @@ Copyright (c) 2016 Zhen Zhu
 [[back to top](#treeprune)]
 
 ## Download
-The easiest way is to download the script [treeprune.py](https://github.com/zhenzhu/treeprune/blob/master/treeprune.py) directly:
+The easiest way is to download the script **treeprune.py** directly:
 
 1. Go to the raw version of [treeprune.py](https://github.com/zhenzhu/treeprune/raw/master/treeprune.py).
 2. Right click and save it. 
+
 
 ## Functions
 
