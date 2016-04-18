@@ -85,7 +85,7 @@ tp.plot_tree(myTree, 'test.png')
 ```
 
 The code is working properly if the figure below is returned:
-![tree example](./examples/test.png "tree example" =25x)
+![tree example](./examples/test.png =100x "tree example")
 
 <br>
 
