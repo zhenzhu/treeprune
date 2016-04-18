@@ -71,18 +71,21 @@ Two functions are available:
 # Testing
 [[back to top](#treeprune)]
 
-```
+```python
 import treeprune as tp
-myPath = './exampleEdgeList.csv' # exampleEdgeList.csv can be downloaded 
-from the folder "examples". Please replace the first dot with your local path. 
+
+myPath = './exampleEdgeList.csv' 
+# exampleEdgeList.csv can be downloaded from the folder "examples". Please replace the first dot with your local path. 
+
 myTree = tp.get_tree(data_path=myPath, sep=',', root='a', cutoff='0.2', layer_max=3, up=False)
 # sep=',' because comma is the delimiter in exampleEdgeList.csv.
 # up=False makes the search downstream. 
+
 tp.plot_tree(myTree, 'test.png')
 ```
 
 The code is working properly if the figure below is returned:
-![tree example](./examples/test.png "tree example")
+![tree example](./examples/test.png "tree example" =25x)
 
 <br>
 
