@@ -95,7 +95,7 @@ def get_tree(data_path,sep,root,cutoff,layer_max,up=True):
                 e1 = ee[0]
                 e2 = ee[1]
                 w = ee[2]['weight']
-                if(e1 in reachset and e2 in unreachset): # The direction goes from e1 to e2 because the direction is downstream.
+                if(e1 in reachset and e2 in unreachset): # e1 in reachset because the direction is downstream.
                     candidatesOut[(e1,e2)] = w  
             sorted_edges_out = sorted(candidatesOut.iteritems(), key=operator.itemgetter(1), reverse = True) 
             # reverse = True is to pick the edge with the largest weight 
