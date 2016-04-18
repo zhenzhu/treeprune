@@ -37,6 +37,23 @@ The easiest way is to download the script **treeprune.py** directly:
 
 ## Functions
 
+Two functions are available:
+
+1. `get_tree` takes the path of a data file of edge list with numeric 
+    weights and returns a tree (`DiGraph` object). The parameters include:  
+	* `data_path`: The path of a data file of edge list with numeric weights.
+    * `sep`: The delimiter of the data file. 
+    * `root`: A root node to start with. 
+    * `cutoff`: The edge weight threshold. 
+    * `layer_max`: The number of layers to explore.
+    * `up`: The direction (upstream or downstream) of the tree. The default is upstream.
+
+2. `plot_tree` returns a tree plot. The parameters include:
+    * `tree`: A tree (`DiGraph` object).
+    * `fig_path`: A string of the path saving the plot. 
+    * `layer_space`: A parameter controlling the space between layers. The default is 3.
+    * `edge_color`: A string of edge color. The default is 'crimson'.
+
 <br>
 
 # Testing
