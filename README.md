@@ -41,10 +41,13 @@ The easiest way is to download the script **treeprune.py** directly:
 **treeprune.py** only works with directed and weighted networks.
 
 An edge list file is needed as an input. The file should be formatted as:
+
 |a|b|0.17|
+|...|...|...|
 |b|c|0.54|
 |.|.|.|
-The first column is the source node, the second is the target node, and 
+
+From left to right, the first column is the source node, the second is the target node, and 
 the third is the edge weight. 
 
 ## Functions
@@ -71,11 +74,13 @@ Two functions are available:
 # Testing
 [[back to top](#treeprune)]
 
+An example edge list file can be downloaded from the following link, [https://github.com/zhenzhu/treeprune/blob/master/examples/exampleEdgeList.csv](https://github.com/zhenzhu/treeprune/blob/master/examples/exampleEdgeList.csv).
+
 ```python
 import treeprune as tp
 
 myPath = './exampleEdgeList.csv' 
-# exampleEdgeList.csv can be downloaded from the folder "examples". Please replace the first dot with your local path. 
+# Please replace the first dot with your local path. 
 
 myTree = tp.get_tree(data_path=myPath, sep=',', root='a', cutoff='0.2', layer_max=3, up=False)
 # sep=',' because comma is the delimiter in exampleEdgeList.csv.
@@ -84,8 +89,8 @@ myTree = tp.get_tree(data_path=myPath, sep=',', root='a', cutoff='0.2', layer_ma
 tp.plot_tree(myTree, 'test.png')
 ```
 
-The code is working properly if the figure below is returned:
-![tree example](./examples/test.png =100x "tree example")
+The code is working properly if the figure at the following link is returned, [https://github.com/zhenzhu/treeprune/blob/master/examples/test.png](https://github.com/zhenzhu/treeprune/blob/master/examples/test.png).
+
 
 <br>
 
