@@ -12,8 +12,10 @@ Copyright (c) 2016 Zhen Zhu
 
 <hr>
 
+**Table of Contents**
 - [Usage](#usage)
 	- [Download](#download)
+	- [Input](#input)
 	- [Functions](#functions)
 - [Testing](#testing)
 - [Reference](#reference)
@@ -34,6 +36,16 @@ The easiest way is to download the script **treeprune.py** directly:
 1. Go to the raw version of [treeprune.py](https://github.com/zhenzhu/treeprune/raw/master/treeprune.py).
 2. Right click and save it. 
 
+## Input
+
+**treeprune.py** only works with directed and weighted networks.
+
+An edge list file is needed as an input. The file should be formatted as:
+|a|b|0.17|
+|b|c|0.54|
+|.|.|.|
+The first column is the source node, the second is the target node, and 
+the third is the edge weight. 
 
 ## Functions
 
@@ -59,6 +71,18 @@ Two functions are available:
 # Testing
 [[back to top](#treeprune)]
 
+```
+import treeprune as tp
+myPath = './exampleEdgeList.csv' # exampleEdgeList.csv can be downloaded 
+from the folder "examples". Please replace the first dot with your local path. 
+myTree = tp.get_tree(data_path=myPath, sep=',', root='a', cutoff='0.2', layer_max=3, up=False)
+# sep=',' because comma is the delimiter in exampleEdgeList.csv.
+# up=False makes the search downstream. 
+tp.plot_tree(myTree, 'test.png')
+```
+
+The code is working properly if the figure below is returned:
+![tree example](./examples/test.png "tree example")
 
 <br>
 
