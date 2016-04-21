@@ -19,6 +19,7 @@ Copyright (c) 2016 Zhen Zhu
 	- [Functions](#functions)
 - [Testing](#testing)
 - [Reference](#reference)
+- [Acknowledgements](#acknowledgements)
 
 <hr>
 **Packages Required:**
@@ -107,5 +108,10 @@ Zhu Z, Puliga M, Cerina F, Chessa A, Riccaboni M (2015)
 [Global Value Trees](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0126699). PLoS ONE 10(5): e0126699. 
 doi:10.1371/journal.pone.0126699
 
+# Acknowledgements
+[[back to top](#treeprune)]
+
+Special thanks go to Michelangelo Puliga and Juan Ignacio Perotti for their
+superb tutorials on Python and Git and inspiring conversations. 
 
 
